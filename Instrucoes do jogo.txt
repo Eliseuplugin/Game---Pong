@@ -1,0 +1,15 @@
+>>>TECLAS DE COMANDO DO JOGO<<<
+
+Procure marcar uma maxima pontuação
+
+
+Mão esquerda/Jogador - 1
+
+Tecla W - para cima
+Tecla S - para baixo
+
+
+Mão direita/Jogador - 2 
+
+Tecla ? - para cima
+Tecla ? - para baixo
