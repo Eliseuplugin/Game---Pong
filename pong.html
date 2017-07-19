@@ -22,6 +22,7 @@
 			
 			var teclas = {};
 			
+			// velocidade da bola
 			var bola = {
 				x: canvas.width /2 - 15,
 				y: canvas.height /2 - 15,
@@ -33,6 +34,8 @@
 				speed: 1
 			};
 
+
+			// comandos da mao esquerda ou jogador 1
 			var esquerda = {
 				x: 10,
 				y: canvas.height /2 -60,
@@ -41,6 +44,9 @@
 				score: 0,
 				speed:10
 			};
+
+
+			// comandos da mao direita ou jogador 2
 			var direita = {
 				x: 560,
 				y: canvas.height /2 -60,
@@ -50,6 +56,8 @@
 				speed:10
 			};
 
+
+			// funcoes para as teclas keydown e keyup		
 			document.addEventListener("keydown", function(e){
 				teclas[e.keyCode] = true;
 			//	alert(e.keyCode);
@@ -59,6 +67,8 @@
 			    delete teclas[e.keyCode];
 			}, false);
 
+
+			// funcao para movimento do bloco
 			function movebloco(){
 				if(87 in teclas && esquerda.y > 0)
 					esquerda.y -= esquerda.speed;
