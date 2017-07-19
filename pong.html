@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title></title>
+	<title>Pong Game - 2D</title>
+
+	
 	<style>
 		canvas {
 			position: absolute;
@@ -85,7 +87,7 @@
 
 
 
-			// funcao para mover a bola do lado direito para esquerdo
+			// funcao para mover a bola do lado direito para esquerdo e velocidade da bola
 			function movebola() {
 				if(bola.y + bola.altura >= esquerda.y && bola.y <= esquerda.y + esquerda.altura && bola.x <= esquerda.x + esquerda.largura) {
 					bola.dirx = 1;
