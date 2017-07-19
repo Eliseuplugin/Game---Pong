@@ -83,6 +83,9 @@
 						direita.y += direita.speed;
 			};
 
+
+
+			// funcao para mover a bola do lado direito para esquerdo
 			function movebola() {
 				if(bola.y + bola.altura >= esquerda.y && bola.y <= esquerda.y + esquerda.altura && bola.x <= esquerda.x + esquerda.largura) {
 					bola.dirx = 1;
@@ -109,6 +112,8 @@
 					newgame("player 1");
 			};
 
+
+			// funcao de pontuacao para o jogador e iniciar um novo jogo
 			function newgame(winner) {
 				if(winner == "player 1")
 					++esquerda.score;
@@ -122,6 +127,8 @@
 				bola.mod = 0;
 			};
 
+
+			// funcao que faz o desenho  das barras de embate
 			function desenha() {
 
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
